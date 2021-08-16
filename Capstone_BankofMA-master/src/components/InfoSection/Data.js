@@ -39,10 +39,28 @@ export const homeObjThree = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'Join our Team',
+    topLine: 'Become a member',
+    headline: 'All of our members enjoy special benefits.',
+    description: 
+        'Click the "New Member" button to add your information and you are ready to go.',
+    buttonLabel: 'New Member',
+    imgStart: true,
+    img: require('../../images/svg-6.svg').default,
+    alt: 'Paper',
+    dark: false,
+    primary: false,
+    darkText: true
+};
+
+export const homeObjFour = {
+    id: 'signup',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: true,
+    topLine: 'Create an account',
     headline: 'Creating an account is extremely easy',
     description: 
-        'Get everything ready in under 10 minutes. All you need to do is add your information and you are ready to go.',
+        'Get everything ready in under 10 minutes. Just create an account to conveniently access your money.',
     buttonLabel: 'Start Now',
     imgStart: false,
     img: require('../../images/svg-6.svg').default,

@@ -13,14 +13,15 @@ import {
   ArrowRight,
 } from "./HeroElements";
 
-function HeroSection (){
+const HeroSection = () =>{
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
-    setHover(!hover);
+    setHover(hover);
   };
 
   return (
+    <>
     <HeroContainer>
       <HeroBg>
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
@@ -33,11 +34,9 @@ function HeroSection (){
         </HeroP>
         <HeroBtnWrapper>
           <Button
-            to="signup"
-            onMouseEnter={() => setHover(true)}
-
-            onMouseLeave={() => setHover(false)}
-
+            to="signUp"
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
             primary="true"
             dark="true"
             smooth={true}
@@ -51,6 +50,7 @@ function HeroSection (){
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
+    </>
   );
 };
 

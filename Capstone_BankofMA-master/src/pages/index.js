@@ -1,14 +1,16 @@
 import React, { useState } from "react";
+import Navbar from "../components/Navbar";
+import Sidebar from "../components/SideBar";
 import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
 import {
   homeObjOne,
   homeObjTwo,
   homeObjThree,
+  homeObjFour
 } from "../components/InfoSection/Data";
-import Navbar from "../components/Navbar";
-import Sidebar from "../components/SideBar";
-import Services from "../components/Services";
+
+import Services from "../components/ServiceSection";
 import Footer from "../components/Footer";
 
 
@@ -21,13 +23,15 @@ const Home = () => {
 
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
+      <Navbar isOpen={isOpen} toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} />      
       <HeroSection />
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
       <InfoSection {...homeObjThree} />
-      <Services />
+      <InfoSection {...homeObjFour} />
+      
+      <Services />      
       <Footer />
     </>
   );

@@ -18,8 +18,8 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="about" onClick={toggle}>
-            About
+          <SidebarLink to="home" onClick={toggle}>
+            Home
           </SidebarLink>
           <SidebarLink to="discover" onClick={toggle}>
             Discover
@@ -30,9 +30,13 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="signup" onClick={toggle}>
             Sign Up
           </SidebarLink>
+          <SidebarLink to="myAccounts" onClick={toggle}>
+            My Account
+          </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to="/signin">Sign In</SidebarRoute>
+          <SidebarRoute to="/signIn">Sign In</SidebarRoute>
+          <SidebarRoute to="/myAccounts">My Accounts</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
